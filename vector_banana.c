@@ -1,3 +1,13 @@
+/*
+    题目：There are N Monkeys and N bananas are placed in a straight line. 
+    Each monkey want to have a banana, if two monkeys want to own the same banana, there will be a fight! 
+    A monkey can stay at his position, move one step right from x to x + 1, or move one step left from x to x -1. 
+    Any of these moves consumes 1 second. 
+    Assign monkeys to banana so that not monkey fight each other and the time when the last monkey gets a banana is minimized.
+    算法：贪心
+    启示：（1）在不确定数组大小时如何实现简便的输入（vector库）；
+         （2）vector的输入、输出、排序用法。
+*/
 #include<vector>
 #include<stdio.h>
 #include<stdlib.h>
