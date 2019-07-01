@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func rotate(nums []int, k int) {
 	arrayLen := len(nums)
 	if k > arrayLen {
@@ -25,12 +21,4 @@ func rotate(nums []int, k int) {
 		nums[i] = tmparray[i]
 	}
 	return
-}
-
-func main() {
-	inputarray := []int{-1, -100, 3, 99}
-	for i := 0; i < len(inputarray)+4; i++ {
-		rotate(inputarray, i)
-		fmt.Println(i, inputarray)
-	}
 }
