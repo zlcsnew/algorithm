@@ -1,6 +1,6 @@
-package main
+package array
 
-func containsDuplicate(nums []int) bool {
+func ContainsDuplicate(nums []int) bool {
 	int_map := make(map[int]int)
 	numsSize := len(nums)
 	var ok bool

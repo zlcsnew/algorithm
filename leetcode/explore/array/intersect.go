@@ -1,13 +1,11 @@
-package main
-
-import "fmt"
+package array
 
 type numbersOfTwoArray struct {
 	nums1 int
 	nums2 int
 }
 
-func intersect(nums1 []int, nums2 []int) []int {
+func Intersect(nums1 []int, nums2 []int) []int {
 	number_map := make(map[int]*numbersOfTwoArray)
 	nums1_len := len(nums1)
 	nums2_len := len(nums2)
@@ -49,10 +47,4 @@ func intersect(nums1 []int, nums2 []int) []int {
 		}
 	}
 	return result
-}
-
-func main() {
-	array1 := []int{4, 9, 5}
-	array2 := []int{9, 4, 9, 8, 4}
-	fmt.Println(intersect(array1, array2))
 }
